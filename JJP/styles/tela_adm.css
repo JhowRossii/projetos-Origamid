@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    color: #040004;
+    line-height: 1.5;
+}
+
+/* CENTRALIZA O FORM */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* INFO NO TOPO ESQUERDO */
+.info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.info h1,
+.info p {
+    color: #fff;
+}
+
+/* FORM */
+.content {
+    background-color: #FFF;
+    width: 720px;
+    padding: 20px;
+    box-shadow: 0px 6px 10px;
+    border-radius: 5px;
+}
+
+.row {
+    padding: 5px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-color: #c2cbce;
+    box-shadow: 2px 2px 2px #c2cbce;
+}
+
+legend {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    padding: 2px;
+    outline: none;
+}
+
+input[type="text"],
+input[type="date"] {
+    border: none;
+    border-bottom: 2px solid #c2cbce;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    color: #223A8E;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: #223A8E;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 15px;
+    background-color: #223A8E;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+/* HOVER AZUL MAIS CLARO */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #4da6ff;
+    transform: scale(1.1);
+    cursor: pointer;
+}
